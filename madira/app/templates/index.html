@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+
+<div id="box-main" style="" class="box-main">
+    <div class="container-normal">
+        <div class="row">
+            <div class="col-md-5 offset-1">
+                <center>
+                    <div style="margin-bottom: 5vh; margin-top: 5vh;">
+                        <img src="{% static 'img/other/alpine-dry-gin.png' %}" class="img-hover-div">
+                        <br>
+                        <br>
+                        <p class="box-main-img-text">ALPINE DRY GIN</p>
+                    </div>
+                </center>
+            </div>
+            <div class="col-md-5">
+                <center>
+                    <div style="margin-bottom: 5vh; margin-top: 5vh;">
+                        <img src="{% static 'img/other/williams-birdeye.png' %}" class="img-hover-div">
+                        <br>
+                        <br>
+                        <p class="box-main-img-text">WILLIAMS WITH BIRD'S EYE CHILLI</p>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="mySidenav" class="sidenav">
+    <div class="container" style="padding-left: 40px;">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Cart</h4>
+            </div>
+            <div class="col-md-4"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            </div>
+            <div class="col-md-12">
+                <hr style="border-bottom: 1px solid #b0a75a;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5"> <img src="{% static 'img/other/alpine-dry-gin.png' %}" class=""> </div>
+            <div class="col-md-7">
+                <p style="font-size: 1.5vh; color: #000;">WILLIAMS WITH BIRD'S EYE CHILLI</p>
+                <p><span>&#8355;</span> 4,410.00</p>
+
+            </div>
+            <div class="col-md-12">
+                <form>
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="section-screen dark-shade">
+    <div class="container-fluid">
+        <div class="container-wide">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div style="margin-top: 15vh;" class="content-desktop">
+                        <span style="font-size: 1.5vh; margin-top: 10vh;color: gray;"> ONLY AT SWISZLE </span>
+                        <br>
+                        <br>
+                        <span class="home-heading-large content-desktop"> SWISS MADE, INDIAN INSPIRED ALPINE DRY GIN
+                        </span>
+                        <span class="content-mobile" style="font-size: 4vh;"> SWISS MADE, INDIAN INSPIRED ALPINE DRY
+                            GIN </span>
+                        <br>
+                        <span style="font-size: 1.7vh; margin-top: 10vh;"> Shop Now <span
+                                style="color: gray;">&#10230;</span> </span>
+                    </div>
+
+                    <div style="margin-top: 2vh;" class="content-mobile">
+                        <span style="font-size: 1.5vh; margin-top: 10vh;color: gray;"> ONLY AT SWISZLE </span>
+                        <br>
+                        <br>
+                        <span class="home-heading-large content-desktop"> SWISS MADE, INDIAN INSPIRED ALPINE DRY GIN
+                        </span>
+                        <span class="content-mobile" style="font-size: 4vh;"> SWISS MADE, INDIAN INSPIRED ALPINE DRY
+                            GIN </span>
+                        <br>
+                        <span style="font-size: 1.7vh; margin-top: 10vh;"> Shop Now <span
+                                style="color: gray;">&#10230;</span> </span>
+                        <br>
+                        <br>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="">
+                        <img src="{% static 'img/other/alpinedrytrans.png' %}" style="height: 100%; width: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-screen light-shade">
+    <div class="">
+        <div class="container-wide">
+            <div class="row">
+                <div class="col-lg-6 offset-md-1">
+                    <div>
+                        <h2 class="" style="margin-top: 10vh;"> Our Story </h2>
+                        <br>
+                        <p class="font-regular">Born out of our mutual passion for premium beverages, Swiszle aims
+                            to provide an ultimate luxurious drinking experience for its customers. We began with
+                            distilling Gin as a hobby. All of our products are Made in Switzerland and we use the
+                            finest ingredients sourced from exotic locations. Our flavours are inspired by our
+                            deep-rooted Indian heritage and from our time spent in Switzerland. The perfect blend of
+                            flavours and our market experience is the driving force to develop high-quality
+                            beverages.</p>
+                        <br>
+                        <!-- <button class="button-regular"> Read full Story </button> -->
+                        <h5>Explore Us <span>&#10230;</span></h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="">
+                <div class="row" style="margin-top: 10vh;">
+                    <div class="col-lg-6">
+                        <div class="dark-shade" style="border-radius: 5px; padding: 15px; margin-top: 10vh;">
+                            <div class="row">
+                                <div class="col-lg-4 offset-md-1">
+                                    <img src="img/other/alpinedrytrans-slim.png" class="content-desktop"
+                                        style="height: 50vh; width: auto; margin-top: -7vh;">
+                                    <center>
+                                        <img src="img/other/alpinedrytrans-slim.png" class="content-mobile"
+                                            style="height: 50vh; width: auto; margin-top: -7vh;">
+                                    </center>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h3 class="" style="margin-top: 10vh;">Swiszle - Alpine Dry Gin </h3>
+                                    <br>
+                                    <p class="font-regular">Handcrafted with passion in Switzerland, discover a
+                                        fragrant blend of Alpine flora: citrusy juniper berries, lavender, sweet
+                                        edelweiss, and earthy angelica root combined with the crystal clear glacier
+                                        water of Mt Titlis.</p>
+                                    <br>
+
+                                    <h5>Discover More <span>&#10230;</span></h5>
+                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="dark-shade" style="border-radius: 5px; padding: 15px; margin-top: 10vh;">
+                            <div class="row">
+                                <div class="col-lg-4 offset-md-1">
+                                    <img src="img/other/alpinedrytrans-slim.png" class="content-desktop"
+                                        style="height: 50vh; width: auto; margin-top: -7vh;">
+                                    <center>
+                                        <img src="img/other/alpinedrytrans-slim.png" class="content-mobile"
+                                            style="height: 50vh; width: auto; margin-top: -7vh;">
+                                    </center>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h3 class="" style="margin-top: 10vh;">Swiszle - Alpine Dry Gin </h3>
+                                    <br>
+                                    <p class="font-regular">Handcrafted with passion in Switzerland, discover a
+                                        fragrant blend of Alpine flora: citrusy juniper berries, lavender, sweet
+                                        edelweiss, and earthy angelica root combined with the crystal clear glacier
+                                        water of Mt Titlis.</p>
+                                    <br>
+
+                                    <h5>Discover More <span>&#10230;</span></h5>
+                                    <br>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+</section>
+
+
+    
+{% endblock body %}
+    

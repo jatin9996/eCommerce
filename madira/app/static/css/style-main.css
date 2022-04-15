@@ -1,0 +1,164 @@
+.dark-shade {
+	background-color: #e9e5e4;
+}
+
+.light-shade {
+	background-color: #f1edec;
+}
+
+.container-wide {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-top: 6vh; 
+}
+
+.container-normal {
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.container-mega-wide {
+	margin-left: 25vw;
+	margin-right: 25vw;
+	padding-top: 6vh; 
+}
+
+.img-hover-div {
+	height: 30vh;
+	
+}
+
+.box-main {
+	display: none;
+	position: fixed; 
+	top: 8vh; 
+	background-color: #dbd5d4; 
+	width: 50%; 
+	margin-right: 10vw;
+	margin-left: 20vw;
+	z-index: 99;
+}
+
+
+.box-main-img-text {
+	font-size: 1.6vh;
+	color: #000;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    background-color: #dbd5d4; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    font-size: 3.5vh;
+    margin-top: -25px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.sidenav {
+    right: 0;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.sidenav {
+    right: 0;
+}
+
+
+
+form {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.value-button {
+  display: inline-block;
+  margin-top: 2vh;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 2vw;
+  height: 4vh;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+  margin-top: -0.6vh;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+  margin-top: -0.6vh;
+
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 2vw;
+  height: 4vh;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
